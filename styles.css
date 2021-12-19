@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: white;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+
+.wrapper {
+  display: flex;
+}
+
+#left {
+  display: flex;
+  flex-direction: column;
+  flex: 40%;
+  background-color: #0d0f12;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+#right {
+  flex: 60%;
+  background-color: black;
+}
+/* 
+Sign in */
+
+#signin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  padding-bottom: 1rem;
+}
+
+#signin form {
+  width: 80%;
+  padding-bottom: 3rem;
+}
+
+#signin .logo {
+  margin-bottom: 8vh;
+}
+
+#signin .logo img {
+  width: 300px;
+}
+
+#signin label {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+#signin .text-input {
+  margin-bottom: 1.3rem;
+  width: 100%;
+  border-radius: 2px;
+  background-color: #0d0f12;
+  border: 1px solid #555;
+  color: #ccc;
+  padding: 0.5rem 1rem;
+  line-height: 1.3rem;
+}
+
+/* Button */
+
+.primary-btn {
+  padding: 0.7rem 1rem;
+  height: 2.7rem;
+  display: block;
+  border: 0;
+  border-radius: 2px;
+  font-weight: 500;
+  background-color: #0074ab;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.5s;
+  width: 100%;
+}
+
+.primary-btn:hover {
+  background-color: #1a5875;
+}
+
+.secondary-btn {
+  padding: 0.7rem 0;
+  height: 2.7rem;
+  display: block;
+  border: 1px solid #333840;
+  border-radius: 2px;
+  font-weight: 500;
+  background-color: #333840;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.5s;
+  width: 80%;
+  margin-bottom: 100px;
+}
+
+.secondary-btn:hover {
+  background-color: #242628;
+}
+
+.or {
+  color: white;
+  width: 80%;
+  margin-bottom: 20px;
+  border: 1px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.company {
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.forgot {
+  text-decoration: none;
+}
+
+.company,
+.forgot {
+  color: #0074ab;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* footer */
+p {
+  color: gray;
+  font-size: 0.8rem;
+}
+
+#main-footer a {
+  color: gray;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.bottom-footer {
+  margin-left: 80px;
+}
+
+#right {
+  background-image: url(./Images/bg-gtm.png);
+}
+
+.lockup {
+  width: 15%;
+  position: relative;
+  top: 680px;
+  left: 750px;
+}
+
+.build {
+  position: relative;
+  top: 200px;
+  left: 100px;
+}
+
+.live-cta {
+  position: relative;
+  top: 220px;
+  left: 100px;
+
+  padding: 0.7rem 0;
+  height: 2.7rem;
+  display: block;
+  border: 1px solid #333840;
+  border-radius: 2px;
+  font-weight: 500;
+  background-color: #f03750;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.5s;
+  width: 25%;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 500px) {
+  #right {
+    display: none;
+  }
+}
