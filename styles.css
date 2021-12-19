@@ -210,7 +210,7 @@ p {
   margin-bottom: 100px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 350px) {
   #right {
     display: none;
   }
